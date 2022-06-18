@@ -1,0 +1,10 @@
+version: '3'
+services:
+  apache:
+    build: ./apache
+    container_name: apache
+    volumes:
+      - ./html:/var/www/html
+    ports:
+      - 8080:80
+    privileged: true

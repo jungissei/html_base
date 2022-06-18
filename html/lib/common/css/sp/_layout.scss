@@ -1,0 +1,40 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+
+
+@include mq(sp){
+  body{
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+
+    @include font_family1;
+  }
+
+  // 横スクロールバーを出さない
+  #wrapper{
+    overflow-x: hidden;
+  }
+
+  .pc {
+    display: none;
+  }
+
+
+  img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .container{
+    .container_width{
+      width: $sp_container_max_width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+}
