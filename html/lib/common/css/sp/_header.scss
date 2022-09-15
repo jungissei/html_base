@@ -1,6 +1,6 @@
-@use "../variables" as *;
+@use "sass:math";
 @use "../mixin" as *;
-
+@use "../variables" as *;
 
 @include mq(sp){
 

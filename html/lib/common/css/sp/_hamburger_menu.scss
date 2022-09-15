@@ -1,61 +1,8 @@
-@use "../variables" as *;
+@use "sass:math";
 @use "../mixin" as *;
+@use "../variables" as *;
 
 
 @include mq(pc){
-  html{
-    min-width: #{$html_min_width};
-  }
-
-  // 横スクロールバーを出さない
-  #wrapper{
-    overflow-x: hidden;
-  }
-
-  body{
-    color: #000;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.6;
-
-    @include font_family1;
-  }
-
-  .sp {
-    display: none;
-  }
-
-  img{
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    transition: opacity 0.2s;
-  }
-
-  a{
-    &:hover{
-      img:not(.no_hover){
-        opacity: 0.7;
-      }
-    }
-  }
-
-  .container{
-    max-width: $html_min_width;
-    margin-right: auto;
-    margin-left: auto;
-
-    .container_width{
-      max-width: $pc_container_max_width;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    .container_width_r{
-      max-width: $pc_container_max_width;
-      margin-right: auto;
-    }
-  }
 
 }
