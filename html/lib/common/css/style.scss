@@ -13,6 +13,7 @@
 
 // テンプレートレイアウト
 @use "./pc/header" as *;
+@use "./pc/hamburger_menu" as *;
 @use "./pc/footer" as *;
 
 // セクションパーツ
@@ -28,6 +29,7 @@
 
 // テンプレートレイアウト
 @use "./sp/header" as *;
+@use "./pc/hamburger_menu" as *;
 @use "./sp/footer" as *;
 
 // セクションパーツ
