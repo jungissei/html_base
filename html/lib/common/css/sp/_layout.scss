@@ -16,6 +16,16 @@
   // 横スクロールバーを出さない
   #wrapper{
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  header,
+  main,
+  footer{
+    width: 100%;
   }
 
   .pc {
